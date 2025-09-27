@@ -22,6 +22,7 @@ class NAGCrossAttention(CrossAttention):
             x,
             context=None,
             value=None,
+            transformer_options=None,
             mask=None,
     ):
         origin_bsz = len(context) - len(x)
